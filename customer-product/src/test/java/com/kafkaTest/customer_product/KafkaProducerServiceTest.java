@@ -16,12 +16,8 @@ public class KafkaProducerServiceTest {
         Product product = new Product();
         product.setId(126);
         product.setName("scooter10");
-        HashMap<String, String> desc = new HashMap<>();
-        desc.put("string", "Small 3-wheel scooter");
-        product.setDescription(desc);
-        HashMap<String, Double> weight = new HashMap<>();
-        weight.put("string", 12.5);
-        product.setWeight(weight);
+        product.setDescription("Small 3-wheel scooter");
+        product.setWeight(12.5);
         kafkaProducerService.sendMessage(product);
     }
 }
