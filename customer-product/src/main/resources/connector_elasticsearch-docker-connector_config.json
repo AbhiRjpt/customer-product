@@ -1,8 +1,0 @@
-{
-  "name": "elasticsearch-docker-connector",
-  "config": {
-    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
-    "topics.regex": "sql-server-docker.*",
-    "connection.url": "elasticsearch:9200"
-  }
-}
